@@ -3,7 +3,7 @@
  * Sousza Consultoria Inteligente — Interactive Application Script (TypeScript)
  * Lógica do Frontend: Tema Dark/Light, Calculadora Dinâmica, Máscara de Telefone e Supabase RLS
  */
-// Configuração soberana da API pública do Supabase
+// Configuração da API pública do Supabase
 const SUPABASE_URL = "https://oczxcuehntfdgneonehc.supabase.co";
 const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9jenhjdWVobnRmZGduZW9uZWhjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODkwMDc4MDIsImV4cCI6MjEwNDU4MzgwMn0.EbIkdWjF4_6PbBtBDi5dOfIqG5EbsnWnrx7_ANburoA";
 let supabaseClient = null;
