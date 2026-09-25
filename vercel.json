@@ -2,12 +2,6 @@
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
-    { "source": "/assets/(.*)", "destination": "/05_site_institucional/assets/$1" },
-    { "source": "/styles.css", "destination": "/05_site_institucional/styles.css" },
-    { "source": "/app.js", "destination": "/05_site_institucional/app.js" },
-    { "source": "/(.*)", "destination": "/05_site_institucional/index.html" }
-  ],
   "headers": [
     {
       "source": "/(.*)",
