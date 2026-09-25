@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ES2020"],
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "rootDir": "./src",
+    "outDir": "./",
+    "skipLibCheck": true,
+    "removeComments": false
+  },
+  "include": ["src/app.ts"]
+}
