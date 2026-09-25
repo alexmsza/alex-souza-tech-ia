@@ -103,9 +103,9 @@ function initCalculator() {
 
     if (btnWhatsappScope) {
       if (selectedNames.length === 0) {
-        btnWhatsappScope.href = "https://wa.me/5581996680373?text=Ol%C3%A1%20Alex%2C%20gostaria%20de%20um%20diagn%C3%B3stico%20de%20tecnologia%2C%20bots%20e%20IA%20para%20minha%20empresa.";
+        btnWhatsappScope.href = "https://wa.me/5581996680373?text=Ol%C3%A1%20Alex%2C%20gostaria%20de%20um%20diagn%C3%B3stico%20com%20a%20Sousza%20Consultoria%20Inteligente%20para%20minha%20empresa.";
       } else {
-        const message = `Olá Alex, simulei um escopo no seu site institucional:\n\n*Serviços Selecionados:*\n- ${selectedNames.join('\n- ')}\n\n*Investimento Estimado:* ${total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}\n*Prazo Estimado:* ${maxDays > 0 ? maxDays + ' dias' : 'Mensal'}\n\nGostaria de agendar uma reunião rápida de 15 minutos para conversarmos sobre esse projeto.`;
+        const message = `Olá Alex, simulei um escopo no site da *Sousza Consultoria Inteligente*:\n\n*Serviços Selecionados:*\n- ${selectedNames.join('\n- ')}\n\n*Investimento Estimado:* ${total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}\n*Prazo Estimado:* ${maxDays > 0 ? maxDays + ' dias úteis' : 'Mensal contínuo'}\n\nGostaria de agendar uma reunião de diagnóstico de 30 minutos para alinharmos esse projeto.`;
         btnWhatsappScope.href = `https://wa.me/5581996680373?text=${encodeURIComponent(message)}`;
       }
     }
@@ -189,12 +189,13 @@ function initContactForm() {
               whatsapp,
               interesse,
               gargalo,
-              origem: 'site_institucional',
+              origem: 'sousza_consultoria_inteligente_web',
               status: 'NOVO',
               metadata: {
                 user_agent: navigator.userAgent,
                 timestamp: new Date().toISOString(),
-                pagina: window.location.href
+                pagina: window.location.href,
+                marca: 'Sousza Consultoria Inteligente'
               }
             }
           ]);
@@ -216,12 +217,12 @@ function initContactForm() {
       statusMsg.style.color = 'var(--accent-emerald)';
       statusMsg.style.border = '1px solid rgba(16, 185, 129, 0.4)';
       statusMsg.innerHTML = dbSuccess
-        ? `✅ <strong>Solicitação gravada com sucesso no Supabase!</strong> Abrindo o WhatsApp de Alex Souza para atendimento imediato...`
-        : `✅ <strong>Solicitação processada com sucesso!</strong> Abrindo o WhatsApp de Alex Souza para atendimento imediato...`;
+        ? `✅ <strong>Solicitação gravada com sucesso no Supabase!</strong> Abrindo o WhatsApp de Alex Souza na Sousza Consultoria Inteligente...`
+        : `✅ <strong>Solicitação processada com sucesso!</strong> Abrindo o WhatsApp da Sousza Consultoria Inteligente...`;
     }
 
     // 3. Montar mensagem formatada e abrir WhatsApp
-    const msg = `*Novo Pedido de Diagnóstico - Site Alex Souza Tech & IA*\n\n` +
+    const msg = `*Novo Pedido de Diagnóstico — Sousza Consultoria Inteligente*\n\n` +
       `*Nome:* ${nome}\n` +
       `*E-mail:* ${email}\n` +
       `*Empresa:* ${empresa}\n` +

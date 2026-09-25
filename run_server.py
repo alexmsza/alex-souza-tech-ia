@@ -18,13 +18,18 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         super().__init__(*args, directory=DIRECTORY, **kwargs)
 
 def start_server():
+    if sys.platform.startswith('win'):
+        try:
+            sys.stdout.reconfigure(encoding='utf-8')
+        except Exception:
+            pass
     os.chdir(DIRECTORY)
     with socketserver.TCPServer(("", PORT), Handler) as httpd:
         url = f"http://localhost:{PORT}"
         print("=" * 65)
-        print("🚀 SITE INSTITUCIONAL — ALEX SOUZA TECH & IA")
-        print(f"📡 Servidor ativo em: {url}")
-        print("💡 Pressione CTRL+C no terminal para encerrar.")
+        print("[SOUSZA] SITE INSTITUCIONAL - SOUSZA CONSULTORIA INTELIGENTE")
+        print(f"[REDE] Servidor ativo em: {url}")
+        print("[INFO] Pressione CTRL+C no terminal para encerrar.")
         print("=" * 65)
         try:
             webbrowser.open(url)
