@@ -1,1 +1,23 @@
-.vercel
+# Dependências e Ambientes
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Vercel e Builds
+.vercel/
+dist/
+build/
+
+# Segredos e Ambientes Locais
+.env
+.env.local
+.env.*.local
+*.log
+
+# IDE & Sistema Operacional
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

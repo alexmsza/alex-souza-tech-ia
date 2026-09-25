@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Design Tokens & CSS Variables — Consultoria Alex Souza Tech & IA
+   Inspirado no padrão Enterprise Stripe / Linear / Vercel
+   ========================================================================== */
+
+:root {
+  /* Paleta Base (Modo Escuro Padrão) */
+  --bg-primary: #090D16;
+  --bg-secondary: #0F172A;
+  --bg-card: #131B2E;
+  --bg-card-hover: #1A253D;
+  --border-subtle: #1E293B;
+  --border-accent: rgba(6, 182, 212, 0.3);
+
+  /* Acentos de Cor */
+  --accent-cyan: #06B6D4;
+  --accent-cyan-hover: #0891B2;
+  --accent-emerald: #10B981;
+  --accent-emerald-hover: #059669;
+  --accent-blue: #3B82F6;
+  --accent-purple: #8B5CF6;
+
+  /* Tipografia */
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  --text-inverse: #0F172A;
+
+  /* Fontes */
+  --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Elevação e Sombras */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 25px rgba(6, 182, 212, 0.15);
+
+  /* Transições e Raios */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+}
+
+/* Modo Claro (Light Mode) */
+[data-theme="light"] {
+  --bg-primary: #F8FAFC;
+  --bg-secondary: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F1F5F9;
+  --border-subtle: #E2E8F0;
+  --border-accent: rgba(6, 182, 212, 0.4);
+
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #94A3B8;
+  --text-inverse: #F8FAFC;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 20px -3px rgba(0, 0, 0, 0.1);
+  --shadow-glow: 0 0 20px rgba(6, 182, 212, 0.2);
+}
