@@ -14,7 +14,7 @@
 <body>
 
   <!-- ==========================================================================
-       HEADER & NAVIGATION
+       HEADER & NAVIGATION (MINIMALISTA ESTILO WIX WH-1085)
        ========================================================================== -->
   <header class="navbar">
     <div class="container nav-container">
@@ -28,23 +28,25 @@
 
       <nav>
         <ul class="nav-links">
-          <li><a href="#proposito">Abordagem</a></li>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#sobre">Quem Somos</a></li>
           <li><a href="#servicos">Soluções</a></li>
-          <li><a href="#diferenciais">Diferenciais</a></li>
-          <li><a href="#modern-stack">Data Stack</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#diferenciais">Comparativo</a></li>
           <li><a href="#calculadora">Calculadora</a></li>
-          <li><a href="#metodologia">Como Funciona</a></li>
-          <li><a href="#sobre">Alex Souza</a></li>
           <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
         <button id="theme-toggle" class="theme-toggle-btn" title="Alternar tema claro/escuro" aria-label="Alternar tema">
-          <!-- Ícone inserido via JS -->
+          <!-- Ícone inserido dinamicamente via JS -->
         </button>
-        <a href="#diagnostico" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.85rem;">Diagnóstico 48h</a>
-        <a href="https://wa.me/5581996680373?text=Ol%C3%A1%20Alex%2C%20gostaria%20de%20conversar%20sobre%20a%20Sousza%20Consultoria%20Inteligente%20para%20minha%20empresa." target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding: 8px 16px; font-size: 0.85rem;">
+        <a href="#diagnostico" class="btn btn-terracotta" style="padding: 10px 20px; font-size: 0.88rem;">
+          Diagnóstico 48h
+        </a>
+        <a href="https://wa.me/5581996680373?text=Ol%C3%A1%20Alex%2C%20gostaria%20de%20conversar%20sobre%20a%20Sousza%20Consultoria%20Inteligente%20para%20minha%20empresa." target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding: 10px 18px; font-size: 0.88rem;">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.004.58 1.761.853 2.806.853h.001c3.182 0 5.768-2.587 5.768-5.766.001-3.181-2.585-5.766-5.769-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.748 0-3.385-.45-4.819-1.24l-5.181 1.359 1.385-5.053c-.886-1.488-1.385-3.23-1.385-5.066 0-5.518 4.482-10 10-10s10 4.482 10 10z"/></svg>
           WhatsApp
         </a>
@@ -53,283 +55,280 @@
   </header>
 
   <!-- ==========================================================================
-       HERO SECTION
+       HERO SECTION FULL-BLEED (LAYOUT WIX WH-1085)
        ========================================================================== -->
-  <section id="home" class="hero-section">
+  <section id="home" class="hero-wix-section">
     <div class="container">
-      <div class="hero-pill">
-        <span class="dot"></span>
-        Porto Digital • Recife/PE • Consultoria Executiva Humanizada em Sprints de 5 a 14 Dias
-      </div>
-
-      <h1 class="hero-title">
-        Engenharia de Software, <span class="gradient-text">Inteligência de Dados</span> e Código Real com Atendimento Humano.
-      </h1>
-
-      <p class="hero-subtitle">
-        Eliminamos a frieza de bots genéricos e a lentidão de consultorias tradicionais. Com a energia inovadora do <strong>Porto Digital em Recife</strong>, a <strong>Sousza Consultoria Inteligente</strong> conecta estratégia executiva à capacidade de entregar MVPs, Bots 24/7 no WhatsApp, Modern Data Stack e automações com código 100% proprietário e zero lock-in.
-      </p>
-
-      <div class="hero-ctas">
-        <a href="#diagnostico" class="btn btn-primary">
-          Solicitar Diagnóstico Gratuito de 48h
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <a href="#calculadora" class="btn btn-outline">
-          Simular Investimento e Prazos
-        </a>
-      </div>
-
-      <div class="hero-badges-wrapper">
-        <span class="hero-badges-title">Stack Homologado de Engenharia & Produção</span>
-        <div class="tech-tags-list">
-          <span class="tech-tag">Next.js 15</span>
-          <span class="tech-tag">Python & FastAPI</span>
-          <span class="tech-tag">DuckDB</span>
-          <span class="tech-tag">ClickHouse</span>
-          <span class="tech-tag">Supabase</span>
-          <span class="tech-tag">Evolution API</span>
-          <span class="tech-tag">Groq LPU (Llama 3.3)</span>
-          <span class="tech-tag">Meta Ads AI</span>
+      <div class="hero-wix-content">
+        <div class="hero-wix-pill">
+          <span class="dot"></span>
+          Porto Digital • Bairro do Recife | Consultoria & Engenharia Ágil
         </div>
-      </div>
 
-      <!-- Vitrine Visual Corporativa com a Imagem Criada (Porto Digital Recife) -->
-      <div class="hero-visual-card">
-        <img src="assets/sousza_brand_hero.jpg" alt="Sousza Consultoria Inteligente — Assessoria Executiva no Porto Digital Recife" class="hero-visual-img">
-        <div class="hero-visual-overlay">
-          <div class="hero-visual-tag">
-            <span style="display:inline-block; width:10px; height:10px; border-radius:50%; background:var(--accent-emerald);"></span>
-            Porto Digital • Bairro do Recife | Sousza Consultoria Inteligente
-          </div>
-          <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
-            <span class="hero-badge-gold">DNA Recife: Inovação & Calor Humano</span>
-            <span style="font-size: 0.8rem; color: var(--text-muted);">Sprints de 5 a 14 dias úteis</span>
-          </div>
-        </div>
-      </div>
+        <h1 class="hero-wix-title">
+          Excelência construída em bases sólidas.
+        </h1>
 
-    </div>
-  </section>
+        <p class="hero-wix-subtitle">
+          Da estratégia de dados à inteligência artificial prática. Desenvolvemos bots humanizados 24/7 no WhatsApp, modern data stack e MVPs em sprints de 5 a 14 dias úteis, com código 100% proprietário e zero burocracia.
+        </p>
 
-  <!-- ==========================================================================
-       METRICS BAR
-       ========================================================================== -->
-  <section class="metrics-bar-section">
-    <div class="container">
-      <div class="metrics-grid">
-        <div class="metric-card">
-          <div class="metric-card-val">&lt; 5 <span>seg</span></div>
-          <div class="metric-card-desc">Tempo de resposta dos nossos Bots humanizados no WhatsApp 24/7</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-card-val">5 a 14 <span>dias</span></div>
-          <div class="metric-card-desc">Prazo médio para colocar um MVP ou automação inteligente em produção</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-card-val">100% <span>seu</span></div>
-          <div class="metric-card-desc">Código proprietário no GitHub e banco Supabase entregues sem travas</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-card-val">&gt; 15h <span>/ sem</span></div>
-          <div class="metric-card-desc">Tempo recuperado por equipe ao eliminar processos manuais e planilhas</div>
+        <div class="hero-wix-buttons">
+          <a href="#servicos" class="btn btn-white">
+            Ver Nossos Serviços
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#calculadora" class="btn btn-outline-white">
+            Simular Investimento
+          </a>
+          <a href="#diagnostico" class="btn btn-terracotta">
+            Solicitar Diagnóstico 48h
+          </a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ==========================================================================
-       A TESE HUMAN-FIRST: O ANTÍDOTO AO VAZIO DA IA
+       TRIO DE PILARES / DESTAQUES (LAYOUT WIX WH-1085 - SOBREPOSTO AO HERO)
        ========================================================================== -->
-  <section id="proposito" class="section">
+  <section class="trio-cards-section">
+    <div class="container">
+      <div class="trio-grid">
+        <!-- Card 01 -->
+        <div class="trio-card">
+          <div>
+            <div class="trio-card-number">01 / ATENDIMENTO & VENDAS</div>
+            <h3 class="trio-card-title">Bots Humanizados 24/7 no WhatsApp</h3>
+            <p class="trio-card-desc">
+              Respostas em menos de 5 segundos com RAG seguro, sem robôs engessados ou alucinações. Triagem instantânea de leads, agendamento de reuniões e transbordo elegante para vendedores humanos.
+            </p>
+          </div>
+          <a href="#servicos" class="trio-card-link">
+            Conhecer Solução <span>→</span>
+          </a>
+        </div>
+
+        <!-- Card 02 -->
+        <div class="trio-card" style="border-top: 3px solid var(--accent-terracotta);">
+          <div>
+            <div class="trio-card-number">02 / MODERN DATA STACK</div>
+            <h3 class="trio-card-title">Engenharia de Dados & BI Ágil</h3>
+            <p class="trio-card-desc">
+              Elimine o caos das planilhas manuais. Implementamos DuckDB, ClickHouse e Supabase com dashboards executivos em tempo real e consulta por linguagem natural no celular da diretoria.
+            </p>
+          </div>
+          <a href="#servicos" class="trio-card-link">
+            Conhecer Solução <span>→</span>
+          </a>
+        </div>
+
+        <!-- Card 03 -->
+        <div class="trio-card">
+          <div>
+            <div class="trio-card-number">03 / PROTOTIPAGEM & MVPs</div>
+            <h3 class="trio-card-title">MVPs em Sprints de 5 a 14 Dias</h3>
+            <p class="trio-card-desc">
+              Valide teses, capte investimentos ou lance novas frentes de receita sem esperar 6 meses. Código limpo, testado e 100% proprietário entregue no seu GitHub, sem dependência de agências.
+            </p>
+          </div>
+          <a href="#servicos" class="trio-card-link">
+            Conhecer Solução <span>→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       QUEM SOMOS & NÚMEROS DE IMPACTO (LAYOUT WIX WH-1085)
+       ========================================================================== -->
+  <section id="sobre" class="about-stats-section">
+    <div class="container">
+      <div class="about-stats-grid">
+        <!-- Lado Esquerdo: Citação do Fundador e Apresentação -->
+        <div>
+          <span class="section-tag">Quem Somos & Tese</span>
+          <h2 class="section-title" style="font-size: 2.3rem; text-align: left;">
+            Construímos tecnologia que gera caixa e tranquilidade.
+          </h2>
+
+          <div class="about-quote-box">
+            <p class="about-quote-text">
+              "Tecnologia em produção não deve ser um enigma acadêmico ou um ralo de dinheiro. Nosso compromisso é entregar soluções enxutas, rápidas e que gerem faturamento mensurável para sua empresa, com o calor humano e o rigor técnico que tornaram o Porto Digital uma referência mundial."
+            </p>
+            <div class="about-quote-author">
+              Alex Souza — Fundador, Tech Lead & Business Advisor
+            </div>
+          </div>
+
+          <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.7; margin-bottom: 24px;">
+            Sediada no <strong>Porto Digital em Recife</strong>, a <strong>Sousza Consultoria Inteligente</strong> atende empresas consolidadas e startups em todo o Brasil. Unimos consultoria executiva hands-on à capacidade de colocar código funcional em produção em poucos dias úteis, eliminando custos ocultos de nuvem através da arquitetura <em>Free-Tier First</em>.
+          </p>
+
+          <a href="#diagnostico" class="btn btn-terracotta">
+            Falar Diretamente com Alex Souza
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Lado Direito: Grid de 4 Grandes Caixas de Impacto (Stats WH-1085) -->
+        <div class="stats-grid-wix">
+          <div class="stat-box-wix">
+            <div class="stat-number-wix">&lt; 5s</div>
+            <div class="stat-label-wix">Tempo de resposta dos nossos Bots humanizados no WhatsApp 24/7</div>
+          </div>
+
+          <div class="stat-box-wix">
+            <div class="stat-number-wix">5 a 14</div>
+            <div class="stat-label-wix">Dias úteis para entregar um MVP ou automação inteligente em produção</div>
+          </div>
+
+          <div class="stat-box-wix">
+            <div class="stat-number-wix">100%</div>
+            <div class="stat-label-wix">Código proprietário no seu GitHub e banco Supabase entregues sem travas</div>
+          </div>
+
+          <div class="stat-box-wix">
+            <div class="stat-number-wix">&gt; 80%</div>
+            <div class="stat-label-wix">Economia de custos de nuvem com arquitetura Free-Tier First OPEX Zero</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       NOSSOS SERVIÇOS & SOLUÇÕES (CATÁLOGO COMPLETO)
+       ========================================================================== -->
+  <section id="servicos" class="section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Nossa Tese Operacional</span>
-        <h2 class="section-title">Tecnologia Inteligente com Empatia e Calor Humano</h2>
+        <span class="section-tag">Soluções Corporativas</span>
+        <h2 class="section-title">Engenharia Sob Medida para sua Operação</h2>
         <p class="section-subtitle">
-          Empresários não precisam de termos vazios de inteligência artificial ou robôs que irritam clientes. Precisam de processos claros, tempo livre para a liderança e clientes respondidos na hora com naturalidade.
+          Sem projetos arrastados de 6 meses. Trabalhamos com escopo fechado, entregas rápidas em dias úteis e foco inegociável em retorno financeiro real.
         </p>
       </div>
 
-      <div class="human-pillars-grid">
-        <div class="human-pillar-card">
-          <div class="human-pillar-icon">🤝</div>
-          <h3 class="human-pillar-title">Atendimento Humanizado</h3>
-          <p class="human-pillar-desc">
-            Nossos bots não fingem ser quem não são nem usam labirintos de menus numéricos. Eles dialogam com naturalidade, compreendem áudios e textos, tiram dúvidas reais e passam para seu time de vendas com o cliente pronto para fechar.
-          </p>
-        </div>
-
-        <div class="human-pillar-card">
-          <div class="human-pillar-icon">🔨</div>
-          <h3 class="human-pillar-title">Hands-On Advisory</h3>
-          <p class="human-pillar-desc">
-            Chega de pagar consultores que só entregam slides e mandam você se virar para contratar programadores. Alex Souza desenha a estratégia executiva de negócios e ele mesmo sobe o código e a infraestrutura em produção.
-          </p>
-        </div>
-
-        <div class="human-pillar-card">
-          <div class="human-pillar-icon">📊</div>
-          <h3 class="human-pillar-title">Modern Data Stack Econômico</h3>
-          <p class="human-pillar-desc">
-            Consultorias tradicionais empurram ferramentas de nuvem caríssimas em dólar. Nós implementamos a nova geração de dados (DuckDB, Supabase, ClickHouse) com custo de nuvem zero ou desprezível no início.
-          </p>
-        </div>
-
-        <div class="human-pillar-card">
-          <div class="human-pillar-icon">🔓</div>
-          <h3 class="human-pillar-title">Zero Lock-in e Liberdade Total</h3>
-          <p class="human-pillar-desc">
-            Você não fica refém da nossa consultoria. O repositório no GitHub, o banco de dados e a documentação completa são seus desde o primeiro dia. Você permanece conosco pela excelência contínua, nunca por amarras.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       SERVIÇOS (OS 8 EIXOS DA CONSULTORIA)
-       ========================================================================== -->
-  <section id="servicos" class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Portfólio de Soluções</span>
-        <h2 class="section-title">Soluções Desenhadas para Gerar Faturamento Rápido</h2>
-        <p class="section-subtitle">Sem projetos infinitos de 6 meses que nunca saem do papel. Entregamos módulos funcionais em sprints curtas e determinísticas.</p>
-      </div>
-
-      <div class="services-grid">
-        <!-- 01. Bots & Atendimento IA (DESTAQUE) -->
-        <div class="service-card" style="border-color: var(--border-gold); background: rgba(245, 158, 11, 0.04);">
+      <div class="services-grid-wix">
+        <!-- 01. KS-BOT -->
+        <div class="service-card-wix featured">
           <div>
-            <div class="service-icon-box" style="background: rgba(245, 158, 11, 0.15); color: var(--accent-gold); border-color: var(--border-gold);">🤖</div>
-            <h3 class="service-card-title">Bots & Agentes de Atendimento Humanizado IA</h3>
-            <p class="service-card-desc">Atendimento 24/7 em menos de 5 segundos no WhatsApp, Instagram e Web. Base de conhecimento própria (RAG) sem alucinações, triagem de leads, agendamento no Google Calendar e transbordo elegante para vendedor humano.</p>
+            <span class="service-badge-pill">MAIS PROCURADO • 5 A 10 DIAS</span>
+            <h3 class="service-title-wix">KS-BOT: Atendimento Humanizado IA 24/7</h3>
+            <p class="service-desc-wix">
+              Bot com respostas em até 5 segundos no WhatsApp e Instagram. Base de conhecimento RAG sem alucinações, triagem de leads, integração com Google Calendar e transbordo para equipe humana.
+            </p>
           </div>
-          <div class="service-card-meta">
-            <span class="service-deadline">5 a 10 dias úteis</span>
-            <div class="service-tags">
-              <span class="service-tag-pill">WhatsApp 24/7</span>
-              <span class="service-tag-pill">Evolution API</span>
-              <span class="service-tag-pill">RAG Seguro</span>
-            </div>
+          <div class="service-footer-wix">
+            <span>Investimento Kickstart:</span>
+            <span class="service-price-tag">R$ 7.200,00</span>
           </div>
         </div>
 
-        <!-- 02. MVP Express -->
-        <div class="service-card">
+        <!-- 02. KS-MVP -->
+        <div class="service-card-wix">
           <div>
-            <div class="service-icon-box">🚀</div>
-            <h3 class="service-card-title">Prototipagem Ágil & MVP Express</h3>
-            <p class="service-card-desc">Valide novas teses de mercado, lance produtos para investidores ou crie novas linhas de receita sem gastar fortunas com agências lentas. Frontend moderno em Next.js, backend FastAPI e banco Supabase rodando em produção.</p>
+            <span class="service-badge-pill">10 A 14 DIAS ÚTEIS</span>
+            <h3 class="service-title-wix">KS-MVP: Prototipagem Ágil & MVP Express</h3>
+            <p class="service-desc-wix">
+              Valide novas ideias de negócios ou produtos digitais sem lentidão. Frontend moderno em Next.js, backend Python/FastAPI e banco relacional Supabase com deploy profissional na nuvem.
+            </p>
           </div>
-          <div class="service-card-meta">
-            <span class="service-deadline">10 a 14 dias úteis</span>
-            <div class="service-tags">
-              <span class="service-tag-pill">Next.js 15</span>
-              <span class="service-tag-pill">Supabase</span>
-              <span class="service-tag-pill">FastAPI</span>
-            </div>
+          <div class="service-footer-wix">
+            <span>Investimento Kickstart:</span>
+            <span class="service-price-tag">R$ 9.800,00</span>
           </div>
         </div>
 
-        <!-- 03. Modern Data Stack -->
-        <div class="service-card">
+        <!-- 03. KS-DATA -->
+        <div class="service-card-wix">
           <div>
-            <div class="service-icon-box">📊</div>
-            <h3 class="service-card-title">Modern Data Stack & Ecossistema de IA</h3>
-            <p class="service-card-desc">Centralize dados dispersos de vendas, estoque e anúncios em um Data Warehouse moderno e econômico. Dashboards executivos em tempo real e agente de IA que responde dúvidas da diretoria pelo WhatsApp.</p>
+            <span class="service-badge-pill">7 A 10 DIAS ÚTEIS</span>
+            <h3 class="service-title-wix">KS-DATA: Modern Data Stack & Dashboards</h3>
+            <p class="service-desc-wix">
+              Centralize vendas, estoque e anúncios em uma infraestrutura moderna e ultrarrápida (DuckDB, ClickHouse). Dashboards em tempo real e consultas por voz e texto pelo WhatsApp.
+            </p>
           </div>
-          <div class="service-card-meta">
-            <span class="service-deadline">7 a 10 dias úteis</span>
-            <div class="service-tags">
-              <span class="service-tag-pill">DuckDB</span>
-              <span class="service-tag-pill">ClickHouse</span>
-              <span class="service-tag-pill">BI Realtime</span>
-            </div>
+          <div class="service-footer-wix">
+            <span>Investimento Kickstart:</span>
+            <span class="service-price-tag">R$ 8.500,00</span>
           </div>
         </div>
 
-        <!-- 04. Refatoração de Legados -->
-        <div class="service-card">
+        <!-- 04. KS-LEGACY -->
+        <div class="service-card-wix">
           <div>
-            <div class="service-icon-box">🔄</div>
-            <h3 class="service-card-title">Refatoração de Legados & Integrações</h3>
-            <p class="service-card-desc">Conecte sistemas e bancos antigos (Totvs, Protheus, SQL Server) a ferramentas modernas via APIs seguras (padrão Strangler Fig), eliminando gargalos manuais sem precisar parar a operação da empresa.</p>
+            <span class="service-badge-pill">7 A 12 DIAS ÚTEIS</span>
+            <h3 class="service-title-wix">KS-LEGACY: Modernização de Sistemas Legados</h3>
+            <p class="service-desc-wix">
+              Conecte ERPs antigos (Totvs, Protheus, SQL Server) a ecossistemas modernos via APIs seguras no padrão Strangler Fig, sem risco de interrupção da operação da sua empresa.
+            </p>
           </div>
-          <div class="service-card-meta">
-            <span class="service-deadline">7 a 12 dias úteis</span>
-            <div class="service-tags">
-              <span class="service-tag-pill">APIs REST</span>
-              <span class="service-tag-pill">Strangler Fig</span>
-              <span class="service-tag-pill">Sem Paradas</span>
-            </div>
+          <div class="service-footer-wix">
+            <span>Investimento Kickstart:</span>
+            <span class="service-price-tag">R$ 7.900,00</span>
           </div>
         </div>
 
-        <!-- 05. CRM e ERP sob Medida -->
-        <div class="service-card">
+        <!-- 05. KS-MEDIA -->
+        <div class="service-card-wix">
           <div>
-            <div class="service-icon-box">🏢</div>
-            <h3 class="service-card-title">CRMs e ERPs Sob Medida</h3>
-            <p class="service-card-desc">Sistemas desenhados com exatidão para a regra de negócio do seu segmento. Chega de pagar mensalidades abusivas por usuário para utilizar apenas 15% de sistemas genéricos de prateleira.</p>
+            <span class="service-badge-pill">5 DIAS ÚTEIS</span>
+            <h3 class="service-title-wix">KS-MEDIA: Esteira de Criativos & Mídia IA</h3>
+            <p class="service-desc-wix">
+              Produção acelerada de 30 peças publicitárias em alta resolução e roteiros de conversão para campanhas no Meta Ads e Google Ads, alinhadas à identidade visual da sua marca.
+            </p>
           </div>
-          <div class="service-card-meta">
-            <span class="service-deadline">20 a 30 dias úteis</span>
-            <div class="service-tags">
-              <span class="service-tag-pill">Regra Específica</span>
-              <span class="service-tag-pill">Zero SaaS Abusivo</span>
-            </div>
+          <div class="service-footer-wix">
+            <span>Investimento Kickstart:</span>
+            <span class="service-price-tag">R$ 5.800,00</span>
           </div>
         </div>
 
-        <!-- 06. Tráfego & Mídia IA -->
-        <div class="service-card">
+        <!-- 06. RET-01 -->
+        <div class="service-card-wix">
           <div>
-            <div class="service-icon-box">📈</div>
-            <h3 class="service-card-title">Tráfego Pago & Mídia com IA</h3>
-            <p class="service-card-desc">Gestão orientada a retorno no Meta e Google Ads com esteira automatizada de criativos visuais gerados por IA (25 a 40 criativos/mês) e triagem imediata no WhatsApp para seu vendedor fechar na hora.</p>
+            <span class="service-badge-pill">RECORRÊNCIA MENSAL</span>
+            <h3 class="service-title-wix">Suporte & Curadoria Mensal de IA</h3>
+            <p class="service-desc-wix">
+              Manutenção contínua do seu bot no WhatsApp, refinamento de prompts, atualização da base de conhecimento, monitoramento de instabilidade e relatórios semanais de performance.
+            </p>
           </div>
-          <div class="service-card-meta">
-            <span class="service-deadline">Mensal contínuo</span>
-            <div class="service-tags">
-              <span class="service-tag-pill">Meta Ads</span>
-              <span class="service-tag-pill">Mídia IA</span>
-              <span class="service-tag-pill">Funil Completo</span>
-            </div>
+          <div class="service-footer-wix">
+            <span>Retainer Mensal:</span>
+            <span class="service-price-tag">R$ 2.800,00 /mês</span>
           </div>
         </div>
 
-        <!-- 07. Mentorias & Advisory -->
-        <div class="service-card">
+        <!-- 07. RET-02 -->
+        <div class="service-card-wix">
           <div>
-            <div class="service-icon-box">🤝</div>
-            <h3 class="service-card-title">Mentorias & Fractional CTO</h3>
-            <p class="service-card-desc">Acompanhamento executivo contínuo para diretores, fundadores e startups. Apoio sênior em decisões críticas de arquitetura de software, governança de IA, contratação e priorização de roadmap.</p>
+            <span class="service-badge-pill">RECORRÊNCIA MENSAL</span>
+            <h3 class="service-title-wix">Growth, Mídia & Tráfego com IA</h3>
+            <p class="service-desc-wix">
+              Gestão de campanhas no Meta e Google Ads integrada à produção contínua de criativos por IA e triagem instantânea de leads no WhatsApp para potencializar o fechamento de vendas.
+            </p>
           </div>
-          <div class="service-card-meta">
-            <span class="service-deadline">Quinzenal / Mensal</span>
-            <div class="service-tags">
-              <span class="service-tag-pill">Advisory VIP</span>
-              <span class="service-tag-pill">Diretoria C-Level</span>
-            </div>
+          <div class="service-footer-wix">
+            <span>Retainer Mensal:</span>
+            <span class="service-price-tag">R$ 5.500,00 /mês</span>
           </div>
         </div>
 
-        <!-- 08. Cursos & Capacitação -->
-        <div class="service-card">
+        <!-- 08. RET-03 -->
+        <div class="service-card-wix featured">
           <div>
-            <div class="service-icon-box">🎓</div>
-            <h3 class="service-card-title">Cursos & Treinamentos In-Company</h3>
-            <p class="service-card-desc">Capacitação prática em IA aplicada para o time da sua empresa (vendas, atendimento, operações e tech). Economize 10+ horas semanais por colaborador com métodos e segurança comprovados.</p>
+            <span class="service-badge-pill">MAIS VENDIDO • RECORRÊNCIA</span>
+            <h3 class="service-title-wix">Tech Lead & Data Advisory (Fractional CTO)</h3>
+            <p class="service-desc-wix">
+              Alex Souza atuando como braço direito técnico e estratégico da sua diretoria. Apoio sênior em arquitetura de sistemas, governança de IA, gestão de dados e liderança técnica.
+            </p>
           </div>
-          <div class="service-card-meta">
-            <span class="service-deadline">4h a 4 semanas</span>
-            <div class="service-tags">
-              <span class="service-tag-pill">In-Company</span>
-              <span class="service-tag-pill">Workshops</span>
-              <span class="service-tag-pill">Prático</span>
-            </div>
+          <div class="service-footer-wix">
+            <span>Retainer Mensal:</span>
+            <span class="service-price-tag">R$ 9.500,00 /mês</span>
           </div>
         </div>
       </div>
@@ -341,7 +340,7 @@
             💎 Garantia de Evolução: Cashback de 100% do Kickstart
           </div>
           <p class="cashback-text">
-            Se sua empresa contratar um dos nossos programas mensais de retenção (Retainers) em até 30 dias após a entrega do Kickstart, <strong>100% do valor pago no Kickstart é revertido como crédito</strong> no contrato anual.
+            Se sua empresa migrar para um dos nossos planos mensais (Retainers) em até 30 dias após a entrega do Kickstart, <strong>100% do valor pago no Kickstart é abatido no contrato anual</strong>.
           </p>
         </div>
         <div class="cashback-badge">
@@ -353,7 +352,80 @@
   </section>
 
   <!-- ==========================================================================
-       DIFERENCIAIS COMPETITIVOS (MATRIZ 5 VIAS)
+       PROJETOS / ESTUDOS DE CASO (LAYOUT WIX WH-1085 - "O QUE FAZEMOS")
+       ========================================================================== -->
+  <section id="projetos" class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Casos Reais & Resultados</span>
+        <h2 class="section-title">Projetos Executados com Impacto Direto</h2>
+        <p class="section-subtitle">
+          Veja como nossa abordagem prática resolveu gargalos operacionais e acelerou negócios reais sem promessas vazias.
+        </p>
+      </div>
+
+      <div class="projects-grid-wix">
+        <!-- Projeto 01 -->
+        <div class="project-card-wix">
+          <div class="project-card-body">
+            <span class="project-tag">Saúde & Clínicas</span>
+            <h3 class="project-title">Atendimento Humanizado 24/7 para Clínica Médica</h3>
+            <p class="project-desc">
+              Implementação de agente no WhatsApp com RAG para responder sobre convênios, procedimentos e agendamento de consultas com transbordo para recepcionistas.
+            </p>
+            <div class="project-metric">
+              ✓ 1.200+ leads atendidos no primeiro mês • Zero atrasos
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 02 -->
+        <div class="project-card-wix">
+          <div class="project-card-body">
+            <span class="project-tag">Logística & Distribuição</span>
+            <h3 class="project-title">Central de BI com DuckDB e Relatórios em Tempo Real</h3>
+            <p class="project-desc">
+              Substituição de planilhas gigantescas por um banco analítico ultraveloz integrado a consultas via WhatsApp para os diretores da distribuidora.
+            </p>
+            <div class="project-metric">
+              ✓ Relatório de 4 horas gerado em 800ms • Custo R$ 0 na nuvem
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 03 -->
+        <div class="project-card-wix">
+          <div class="project-card-body">
+            <span class="project-tag">Startups & SaaS</span>
+            <h3 class="project-title">MVP de Plataforma B2B em 12 Dias Úteis</h3>
+            <p class="project-desc">
+              Desenvolvimento completo de frontend em Next.js 15, backend FastAPI e autenticação Supabase para validação de produto com investidores-anjo.
+            </p>
+            <div class="project-metric">
+              ✓ Produto no ar em 12 dias • Contrato de aporte validado
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 04 -->
+        <div class="project-card-wix">
+          <div class="project-card-body">
+            <span class="project-tag">Varejo & Serviços</span>
+            <h3 class="project-title">Esteira de Mídia IA com Triagem Instantânea</h3>
+            <p class="project-desc">
+              Campanhas de tráfego pago integradas a criativos dinâmicos com roteamento automático de clientes qualificados direto para corretores no WhatsApp.
+            </p>
+            <div class="project-metric">
+              ✓ Redução de 42% no custo de aquisição de clientes (CAC)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MATRIZ COMPARATIVA DE MERCADO
        ========================================================================== -->
   <section id="diferenciais" class="section">
     <div class="container">
@@ -370,7 +442,7 @@
           <thead>
             <tr>
               <th>Dimensão de Avaliação</th>
-              <th class="highlight-col" style="border-left: 2px solid var(--accent-gold); border-right: 2px solid var(--accent-gold);">
+              <th class="highlight-col">
                 Sousza Consultoria Inteligente
               </th>
               <th>Agências de IA (No-Code)</th>
@@ -382,7 +454,7 @@
           <tbody>
             <tr>
               <td><strong>Velocidade de Entrega</strong></td>
-              <td class="highlight-col" style="border-left: 2px solid var(--accent-gold); border-right: 2px solid var(--accent-gold);">
+              <td class="highlight-col">
                 <strong>5 a 14 dias úteis</strong>
               </td>
               <td>7 a 20 dias</td>
@@ -392,7 +464,7 @@
             </tr>
             <tr>
               <td><strong>Perfil do Interlocutor</strong></td>
-              <td class="highlight-col" style="border-left: 2px solid var(--accent-gold); border-right: 2px solid var(--accent-gold);">
+              <td class="highlight-col">
                 <strong>Tech Lead Sênior Direto (Alex Souza)</strong>
               </td>
               <td>Profissional de Marketing</td>
@@ -402,7 +474,7 @@
             </tr>
             <tr>
               <td><strong>Profundidade Técnica</strong></td>
-              <td class="highlight-col" style="border-left: 2px solid var(--accent-gold); border-right: 2px solid var(--accent-gold);">
+              <td class="highlight-col">
                 <strong>Engenharia Full-Stack & APIs Reais</strong>
               </td>
               <td>Superficial (No-code Make/Zapier)</td>
@@ -412,7 +484,7 @@
             </tr>
             <tr>
               <td><strong>Entrega Prática ("Mão na Massa")</strong></td>
-              <td class="highlight-col" style="border-left: 2px solid var(--accent-gold); border-right: 2px solid var(--accent-gold);">
+              <td class="highlight-col">
                 <strong>SIM (Código pronto em produção)</strong>
               </td>
               <td>Sim (Apenas fluxos visuais)</td>
@@ -422,7 +494,7 @@
             </tr>
             <tr>
               <td><strong>Modern Data Stack Econômico</strong></td>
-              <td class="highlight-col" style="border-left: 2px solid var(--accent-gold); border-right: 2px solid var(--accent-gold);">
+              <td class="highlight-col">
                 <strong>SIM (DuckDB/Supabase/ClickHouse)</strong>
               </td>
               <td>Não dominam dados</td>
@@ -432,7 +504,7 @@
             </tr>
             <tr>
               <td><strong>Esteira Integrada com Vendas</strong></td>
-              <td class="highlight-col" style="border-left: 2px solid var(--accent-gold); border-right: 2px solid var(--accent-gold);">
+              <td class="highlight-col">
                 <strong>SIM (Do Anúncio ao WhatsApp & CRM)</strong>
               </td>
               <td>Apenas bot solto</td>
@@ -442,18 +514,18 @@
             </tr>
             <tr>
               <td><strong>Propriedade do Código & Dados</strong></td>
-              <td class="highlight-col" style="border-left: 2px solid var(--accent-gold); border-right: 2px solid var(--accent-gold);">
+              <td class="highlight-col">
                 <strong>100% Seu (Zero travas no GitHub)</strong>
               </td>
               <td>Preso nas ferramentas pagas</td>
               <td>Dashboards internos</td>
-              <td>Contratos leoninos com travas</td>
+              <td>Contratos com travas</td>
               <td>N/A</td>
             </tr>
             <tr>
               <td><strong>Investimento de Entrada</strong></td>
-              <td class="highlight-col" style="border-left: 2px solid var(--accent-gold); border-right: 2px solid var(--accent-gold);">
-                <strong>Acessível (R$ 7,2k a R$ 9,8k)</strong>
+              <td class="highlight-col">
+                <strong>Acessível (R$ 5,8k a R$ 9,8k)</strong>
               </td>
               <td>R$ 2k a R$ 5k</td>
               <td>R$ 30k a R$ 80k+</td>
@@ -467,63 +539,9 @@
   </section>
 
   <!-- ==========================================================================
-       SHOWCASE: MODERN DATA STACK & BOTS
+       CALCULADORA DINÂMICA DE INVESTIMENTO
        ========================================================================== -->
-  <section id="modern-stack" class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
-    <div class="container">
-      <div class="stack-showcase-box">
-        <div>
-          <span class="section-tag">Eficiência de Dados & Atendimento</span>
-          <h2 class="section-title" style="font-size: 2.2rem;">Sua Empresa Operando com Inteligência Real</h2>
-          <p class="section-subtitle" style="text-align: left; margin-bottom: 20px;">
-            Conectamos o atendimento imediato do WhatsApp à inteligência do Modern Data Stack. Seu cliente é atendido em segundos e sua diretoria toma decisões com dados consolidados em tempo real.
-          </p>
-
-          <ul class="stack-feature-list">
-            <li class="stack-feature-item">
-              <span class="check-icon">✓</span>
-              <span><strong>Atendimento 24/7 sem Espera:</strong> Agentes de IA respondem dúvidas sobre preços, produtos e agendam reuniões a qualquer hora da noite ou finais de semana.</span>
-            </li>
-            <li class="stack-feature-item">
-              <span class="check-icon">✓</span>
-              <span><strong>Pipelines Automáticos:</strong> Extração diária de vendas, estoque e campanhas de anúncios sem ninguém precisar abrir planilhas Excel.</span>
-            </li>
-            <li class="stack-feature-item">
-              <span class="check-icon">✓</span>
-              <span><strong>Custos de Nuvem Próximos de Zero:</strong> DuckDB e ClickHouse operando com desempenho ultra veloz sem faturas gigantes da nuvem na fase inicial.</span>
-            </li>
-            <li class="stack-feature-item">
-              <span class="check-icon">✓</span>
-              <span><strong>Perguntas em Linguagem Natural:</strong> Consulte pelo celular: <em>"Qual produto gerou mais margem líquida este mês?"</em> e tenha o resultado em segundos.</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="stack-diagram-card">
-          <div style="color: var(--accent-gold); margin-bottom: 12px; font-weight: 600;">// ARQUITETURA SOUSZA: BOTS + MODERN DATA STACK</div>
-          <div style="color: var(--text-secondary); line-height: 1.8;">
-            [Cliente no WhatsApp / Instagram / Web]<br>
-            &nbsp;&nbsp;│<br>
-            &nbsp;&nbsp;▼ (Atendimento em &lt; 5s com RAG Seguro & Agendamento)<br>
-            [Bot de Atendimento Humanizado IA]<br>
-            &nbsp;&nbsp;│<br>
-            &nbsp;&nbsp;├──► [Transbordo para Vendedor Humano no WhatsApp]<br>
-            &nbsp;&nbsp;└──► [Gravação no CRM & Data Warehouse - Supabase / DuckDB]<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──► [Dashboard Executivo em Tempo Real para Diretoria]
-          </div>
-          <div style="margin-top: 16px; font-size: 0.78rem; color: var(--accent-emerald);">
-            ● Status da Operação: 100% Ativa • Latência &lt; 200ms • Zero Lock-in
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       CALCULADORA INTERATIVA DE INVESTIMENTO
-       ========================================================================== -->
-  <section id="calculadora" class="section">
+  <section id="calculadora" class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Simulador Transparente de Escopo</span>
@@ -670,101 +688,9 @@
   </section>
 
   <!-- ==========================================================================
-       COMO FUNCIONA A METODOLOGIA (4 PASSOS)
-       ========================================================================== -->
-  <section id="metodologia" class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Processo Ágil & Seguro</span>
-        <h2 class="section-title">Como Conduzimos Cada Projeto</h2>
-        <p class="section-subtitle">
-          Eliminamos o risco do cliente através de um ciclo transparente em 4 etapas bem definidas.
-        </p>
-      </div>
-
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-top: 40px;">
-        <div class="human-pillar-card">
-          <div style="font-family: var(--font-mono); font-size: 1.5rem; font-weight: 800; color: var(--accent-gold); margin-bottom: 12px;">01</div>
-          <h3 class="human-pillar-title">Diagnóstico de 48h</h3>
-          <p class="human-pillar-desc">
-            Reunião executiva de 45 minutos (SPIN Selling) para mapear onde sua operação perde dinheiro, gargalos de atendimento ou ineficiência de planilhas. Entrega de relatório prático sem custo.
-          </p>
-        </div>
-
-        <div class="human-pillar-card">
-          <div style="font-family: var(--font-mono); font-size: 1.5rem; font-weight: 800; color: var(--accent-cyan); margin-bottom: 12px;">02</div>
-          <h3 class="human-pillar-title">Proposta em 24h</h3>
-          <p class="human-pillar-desc">
-            Proposta executiva de 3 páginas: escopo fechado, prazo exato, tabela transparente de investimento e condição 50% de entrada e 50% na homologação final.
-          </p>
-        </div>
-
-        <div class="human-pillar-card">
-          <div style="font-family: var(--font-mono); font-size: 1.5rem; font-weight: 800; color: var(--accent-emerald); margin-bottom: 12px;">03</div>
-          <h3 class="human-pillar-title">Sprint Ágil (5-14 dias)</h3>
-          <p class="human-pillar-desc">
-            Desenvolvimento direto por Alex Souza com demonstrações intermediárias toda semana. Sem intermediários comerciais: você vê a evolução funcionando na sua tela.
-          </p>
-        </div>
-
-        <div class="human-pillar-card">
-          <div style="font-family: var(--font-mono); font-size: 1.5rem; font-weight: 800; color: var(--text-main); margin-bottom: 12px;">04</div>
-          <h3 class="human-pillar-title">Handover & Propriedade</h3>
-          <p class="human-pillar-desc">
-            Transferência formal de código no GitHub, credenciais de banco e treinamento gravado da equipe. 30 dias de suporte e garantia inclusos.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       SOBRE ALEX SOUZA & SOUSZA CONSULTORIA
-       ========================================================================== -->
-  <section id="sobre" class="section">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-card-badge">
-          <div class="about-avatar-box">AS</div>
-          <h3 style="font-size: 1.5rem; margin-bottom: 6px;">Alex Souza</h3>
-          <div class="about-role-tag">Fundador & Principal Tech Lead</div>
-          <div class="about-location-tag">📍 Porto Digital, Recife/PE • Atendimento Nacional</div>
-          <div style="margin-top: 20px; display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
-            <span class="tech-tag">Porto Digital</span>
-            <span class="tech-tag">Bots & WhatsApp</span>
-            <span class="tech-tag">Modern Data Stack</span>
-            <span class="tech-tag">Fractional CTO</span>
-          </div>
-        </div>
-
-        <div>
-          <span class="section-tag">DNA Porto Digital & Negócios</span>
-          <h2 class="section-title" style="font-size: 2.2rem; text-align: left;">Engenharia de Alto Nível com a Proximidade e o Calor de Recife</h2>
-          <p style="color: var(--text-secondary); margin-bottom: 16px; font-size: 1.02rem;">
-            Sou engenheiro de software e consultor executivo, atuando no ecossistema do <strong>Porto Digital em Recife</strong> — o maior parque tecnológico urbano do Brasil. Fundei a <strong>Sousza Consultoria Inteligente</strong> unindo o rigor técnico da engenharia de ponta à essência do acolhimento humano: <strong>tecnologia existe para resolver problemas reais de pessoas reais, aliviar o estresse da liderança e colocar dinheiro no caixa</strong>.
-          </p>
-          <p style="color: var(--text-secondary); margin-bottom: 16px; font-size: 1.02rem;">
-            Recife ensinou o mundo a unir criatividade, cultura e software de classe mundial. Na nossa consultoria, você não fala com robôs frios nem com gerentes comerciais que não entendem de código: você conversa diretamente comigo para desenhar a estratégia e ver seu MVP, bot no WhatsApp ou modern data stack funcionando em dias úteis.
-          </p>
-          <p style="color: var(--text-secondary); font-size: 1.02rem;">
-            Atendemos empresas e startups em todo o Brasil com a mesma agilidade e calor humano, entregando código 100% proprietário, sem travas contratuais e com foco obsessivo em retorno sobre investimento.
-          </p>
-
-          <div style="margin-top: 30px;">
-            <a href="#diagnostico" class="btn btn-primary">
-              Agendar Conversa com Alex Souza
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
        FAQ (PERGUNTAS FREQUENTES)
        ========================================================================== -->
-  <section id="faq" class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+  <section id="faq" class="section">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Transparência Total</span>
@@ -789,7 +715,7 @@
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">
-            Trabalhamos com uma esteira de esteiras ágeis testadas e componentes modernos (Next.js, FastAPI, Supabase, Evolution API e n8n). Em vez de reinventar a roda ou criar rotinas artesanais do zero de forma lenta, nós aplicamos uma arquitetura sólida de nível enterprise, focando 100% do tempo na regra de negócio específica da sua empresa.
+            Trabalhamos com uma esteira ágil testada e componentes modernos (Next.js, FastAPI, Supabase, Evolution API e n8n). Em vez de reinventar a roda ou criar rotinas artesanais do zero de forma lenta, nós aplicamos uma arquitetura sólida de nível enterprise, focando 100% do tempo na regra de negócio específica da sua empresa.
           </div>
         </div>
 
@@ -837,127 +763,182 @@
   </section>
 
   <!-- ==========================================================================
-       FORMULÁRIO DE DIAGNÓSTICO
+       SEDE & CONTATO (LAYOUT WIX WH-1085: SEDE + FORMULÁRIO DIVIDIDO)
        ========================================================================== -->
-  <section id="diagnostico" class="section">
+  <section id="contato" class="contact-section-wix">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Início Sem Custo</span>
-        <h2 class="section-title">Agende seu Diagnóstico Operacional Gratuito</h2>
-        <p class="section-subtitle">Descubra em 48 horas onde sua operação está perdendo tempo e como a engenharia de software e a IA podem destravar seu faturamento.</p>
-      </div>
+      <div class="contact-grid-wix">
+        <!-- Lado Esquerdo: Dados da Sede no Bairro do Recife (Porto Digital) -->
+        <div class="contact-info-wix">
+          <span class="section-tag">Sede & Atendimento</span>
+          <h3 class="section-title" style="text-align: left; font-size: 2.2rem;">
+            Entre em Contato Conosco
+          </h3>
+          <p style="color: var(--text-secondary); font-size: 1rem; line-height: 1.7;">
+            Estamos sediados no coração do maior ecossistema tecnológico urbano do Brasil. Agende uma visita ou converse diretamente com nossa equipe executiva.
+          </p>
 
-      <div class="contact-box">
-        <div id="form-status-msg" style="display:none; padding: 14px 18px; border-radius: var(--radius-md); margin-bottom: 20px; font-size: 0.95rem; font-weight: 500;"></div>
-        <form id="diagnostic-form">
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-            <div class="form-group">
-              <label class="form-label" for="form-name">Seu Nome Completo:</label>
-              <input type="text" id="form-name" class="form-input" placeholder="Ex: Roberto Silva" required>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="form-email">Seu E-mail Corporativo:</label>
-              <input type="email" id="form-email" class="form-input" placeholder="Ex: roberto@empresa.com.br" required>
-            </div>
+          <ul class="contact-details-list">
+            <li class="contact-detail-item">
+              <div class="contact-detail-icon">📍</div>
+              <div>
+                <div class="contact-detail-label">Endereço da Sede:</div>
+                <div class="contact-detail-value">Porto Digital • Bairro do Recife, Recife - PE, Brasil</div>
+              </div>
+            </li>
+
+            <li class="contact-detail-item">
+              <div class="contact-detail-icon">💬</div>
+              <div>
+                <div class="contact-detail-label">WhatsApp Executivo:</div>
+                <div class="contact-detail-value">+55 (81) 99668-0373</div>
+              </div>
+            </li>
+
+            <li class="contact-detail-item">
+              <div class="contact-detail-icon">✉️</div>
+              <div>
+                <div class="contact-detail-label">E-mail Direto:</div>
+                <div class="contact-detail-value">alexsouza.tech.ia@gmail.com</div>
+              </div>
+            </li>
+
+            <li class="contact-detail-item">
+              <div class="contact-detail-icon">⏱️</div>
+              <div>
+                <div class="contact-detail-label">Horário de Operação:</div>
+                <div class="contact-detail-value">Segunda a Sexta, 08h às 18h (Bots ativos 24/7)</div>
+              </div>
+            </li>
+          </ul>
+
+          <div style="margin-top: 30px;">
+            <a href="https://wa.me/5581996680373?text=Ol%C3%A1%20Alex%2C%20gostaria%20de%20um%20diagn%C3%B3stico%20com%20a%20Sousza%20Consultoria%20Inteligente." target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding: 12px 24px;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.004.58 1.761.853 2.806.853h.001c3.182 0 5.768-2.587 5.768-5.766.001-3.181-2.585-5.766-5.769-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.748 0-3.385-.45-4.819-1.24l-5.181 1.359 1.385-5.053c-.886-1.488-1.385-3.23-1.385-5.066 0-5.518 4.482-10 10-10s10 4.482 10 10z"/></svg>
+              Iniciar Conversa no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Lado Direito: Formulário de Diagnóstico 48h integrado ao Supabase -->
+        <div class="contact-form-box" id="diagnostico">
+          <div style="margin-bottom: 24px;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 6px; color: var(--text-main);">Solicitar Diagnóstico 48h</h3>
+            <p style="color: var(--text-secondary); font-size: 0.92rem;">Preencha os campos abaixo para receber uma análise preliminar gratuita do seu negócio.</p>
           </div>
 
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-            <div class="form-group">
-              <label class="form-label" for="form-company">Nome da sua Empresa / Startup:</label>
-              <input type="text" id="form-company" class="form-input" placeholder="Ex: Silva Distribuidora" required>
+          <div id="form-status-msg" style="display:none; padding: 14px 18px; border-radius: var(--radius-sm); margin-bottom: 20px; font-size: 0.92rem; font-weight: 500;"></div>
+
+          <form id="diagnostic-form">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label class="form-label" for="form-name">Seu Nome Completo:</label>
+                <input type="text" id="form-name" class="form-input" placeholder="Ex: Roberto Silva" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="form-email">Seu E-mail Corporativo:</label>
+                <input type="email" id="form-email" class="form-input" placeholder="Ex: roberto@empresa.com.br" required>
+              </div>
             </div>
-            <div class="form-group">
-              <label class="form-label" for="form-phone">Seu WhatsApp Comercial:</label>
-              <input type="tel" id="form-phone" class="form-input" placeholder="Ex: (81) 99999-9999" required>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label class="form-label" for="form-company">Nome da sua Empresa:</label>
+                <input type="text" id="form-company" class="form-input" placeholder="Ex: Silva Distribuidora" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="form-phone">Seu WhatsApp Comercial:</label>
+                <input type="tel" id="form-phone" class="form-input" placeholder="Ex: (81) 99999-9999" required>
+              </div>
             </div>
-          </div>
 
-          <div class="form-group">
-            <label class="form-label" for="form-interest">Qual o seu interesse principal?</label>
-            <select id="form-interest" class="form-select">
-              <option value="KS-BOT: Bot & Agente de Atendimento Humanizado IA">Bot & Agente de Atendimento Humanizado IA (WhatsApp / Omnichannel 24/7)</option>
-              <option value="KS-MVP: Prototipagem Ágil & MVP Express">Prototipagem Ágil & MVP Express (Lançar produto em 10 dias úteis)</option>
-              <option value="KS-DATA: Modern Data Stack & Dashboards">Modern Data Stack & Organização de Dados (Eliminar planilhas)</option>
-              <option value="KS-LEGACY: Refatoração de Legado & Integração">Refatoração de Código & Integração de Sistema Legado</option>
-              <option value="Enterprise: CRM ou ERP Sob Medida">Desenvolvimento de CRM ou ERP Sob Medida</option>
-              <option value="Growth: Tráfego Pago & Mídia com IA">Gestão de Tráfego Pago & Produção de Mídia com IA</option>
-              <option value="Advisory: Tech Lead & Fractional CTO">Mentoria Executiva / Parceria como Fractional CTO</option>
-              <option value="Treinamento: Capacitação In-Company de IA">Workshop ou Treinamento Corporativo para Equipe</option>
-            </select>
-          </div>
+            <div class="form-group">
+              <label class="form-label" for="form-interest">Qual o seu interesse principal?</label>
+              <select id="form-interest" class="form-select">
+                <option value="KS-BOT: Bot & Agente de Atendimento Humanizado IA">Bot & Agente de Atendimento Humanizado IA (WhatsApp 24/7)</option>
+                <option value="KS-MVP: Prototipagem Ágil & MVP Express">Prototipagem Ágil & MVP Express (Lançar produto em 10 dias úteis)</option>
+                <option value="KS-DATA: Modern Data Stack & Dashboards">Modern Data Stack & Dashboards em Tempo Real</option>
+                <option value="KS-LEGACY: Refatoração de Legado & Integração">Modernização & Refatoração de Sistema Legado</option>
+                <option value="KS-MEDIA: Esteira de Criativos & Mídia IA">Esteira de Criativos & Mídia IA para Vendas</option>
+                <option value="Enterprise: CRM ou ERP Sob Medida">Desenvolvimento de CRM ou ERP Sob Medida</option>
+                <option value="Advisory: Tech Lead & Fractional CTO">Tech Lead & Data Advisory (Fractional CTO)</option>
+              </select>
+            </div>
 
-          <div class="form-group">
-            <label class="form-label" for="form-message">Conte resumidamente qual o maior gargalo na sua rotina hoje:</label>
-            <textarea id="form-message" class="form-textarea" rows="4" placeholder="Ex: Demoramos para responder leads no WhatsApp fora do horário comercial, ou nossa equipe perde horas consolidando dados manuais em planilhas..."></textarea>
-          </div>
+            <div class="form-group">
+              <label class="form-label" for="form-message">Qual o maior gargalo na sua operação hoje?</label>
+              <textarea id="form-message" class="form-textarea" rows="4" placeholder="Ex: Demoramos para responder clientes no WhatsApp à noite, ou nossa equipe perde 15h semanais com planilhas manuais..."></textarea>
+            </div>
 
-          <button type="submit" id="btn-submit-form" class="btn btn-primary" style="width: 100%; padding: 14px; font-size: 1.05rem;">
-            Enviar Solicitação e Abrir no WhatsApp
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </button>
-        </form>
+            <button type="submit" id="btn-submit-form" class="btn btn-terracotta" style="width: 100%; padding: 14px; font-size: 1rem;">
+              Enviar Solicitação e Abrir no WhatsApp
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ==========================================================================
-       FOOTER
+       FOOTER CORPORATIVO (ESTILO WIX WH-1085)
        ========================================================================== -->
-  <footer class="footer">
+  <footer class="footer-wix">
     <div class="container">
-      <div class="footer-grid">
+      <div class="footer-grid-wix">
         <div>
-          <div class="brand-wrapper" style="margin-bottom: 14px;">
+          <div class="brand-wrapper" style="margin-bottom: 16px;">
             <img src="assets/sousza_logo_mark.jpg" alt="Sousza Consultoria Inteligente Logo" class="brand-logo-img">
             <div class="brand-text-group">
-              <span class="brand-name" style="font-size: 1.25rem;">SOUSZA</span>
+              <span class="brand-name">SOUSZA</span>
               <span class="brand-sub">Consultoria Inteligente</span>
             </div>
           </div>
-          <p class="footer-brand-desc">
-            Consultoria executiva humanizada, bots de atendimento inteligente e engenharia de software de alto padrão para empresas e startups que buscam velocidade, previsibilidade e resultados financeiros tangíveis.
+          <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; max-width: 340px;">
+            Engenharia de software ágil, Modern Data Stack e bots de atendimento humanizado 24/7 no WhatsApp. Sprints determinísticas de 5 a 14 dias úteis com código 100% proprietário.
           </p>
         </div>
 
         <div>
           <h4 class="footer-col-title">Soluções</h4>
-          <ul class="footer-links">
+          <ul class="footer-links-list">
             <li><a href="#servicos">Bots de Atendimento 24/7</a></li>
             <li><a href="#servicos">MVP Express em 10 dias</a></li>
-            <li><a href="#modern-stack">Modern Data Stack</a></li>
-            <li><a href="#servicos">Refatoração de Legados</a></li>
+            <li><a href="#servicos">Modern Data Stack</a></li>
+            <li><a href="#servicos">Modernização de Legados</a></li>
             <li><a href="#servicos">CRMs e ERPs Custom</a></li>
           </ul>
         </div>
 
         <div>
           <h4 class="footer-col-title">Programas</h4>
-          <ul class="footer-links">
+          <ul class="footer-links-list">
             <li><a href="#calculadora">Calculadora de Escopo</a></li>
-            <li><a href="#servicos">Tráfego & Mídia com IA</a></li>
+            <li><a href="#servicos">Esteira de Criativos IA</a></li>
             <li><a href="#servicos">Fractional CTO / Advisory</a></li>
-            <li><a href="#servicos">Workshops In-Company</a></li>
+            <li><a href="#projetos">Estudos de Caso</a></li>
             <li><a href="#faq">Perguntas Frequentes</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-col-title">Contato Direto</h4>
-          <ul class="footer-links">
+          <h4 class="footer-col-title">Sede & Contato</h4>
+          <ul class="footer-links-list">
             <li><a href="https://wa.me/5581996680373" target="_blank" rel="noopener">WhatsApp: (81) 99668-0373</a></li>
-            <li><a href="mailto:contato@alexsouza.tech">contato@alexsouza.tech</a></li>
-            <li><span style="color: var(--text-muted);">Recife/PE • Atendimento Nacional</span></li>
-            <li><span style="color: var(--accent-emerald);">● Disponível para Novos Projetos</span></li>
+            <li><a href="mailto:alexsouza.tech.ia@gmail.com">alexsouza.tech.ia@gmail.com</a></li>
+            <li><span style="color: var(--text-muted);">Porto Digital • Recife/PE</span></li>
+            <li><span style="color: var(--accent-emerald); font-weight: 600;">● Sprints Abertas</span></li>
           </ul>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <div>© 2026 Sousza Consultoria Inteligente. Todos os direitos reservados. Conformidade estrita com a LGPD.</div>
+      <div class="footer-bottom-wix">
+        <div>
+          © 2026 Sousza Consultoria Inteligente. Todos os direitos reservados. Conformidade estrita com a LGPD.
+        </div>
         <div style="display: flex; gap: 20px;">
           <span>Código Proprietário</span>
-          <span>Atendimento Humanizado</span>
-          <span>Sprints Ágeis</span>
+          <span>Sprints de 5 a 14 Dias</span>
           <span>Zero Lock-in</span>
         </div>
       </div>
