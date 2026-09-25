@@ -983,19 +983,77 @@ h1, h2, h3, h4 {
   gap: 14px;
 }
 
-/* Responsividade Mobile */
-@media (max-width: 992px) {
-  .nav-links { display: none; }
-  .trio-grid { grid-template-columns: 1fr; }
-  .about-stats-grid { grid-template-columns: 1fr; }
-  .calc-grid { grid-template-columns: 1fr; }
-  .contact-grid-wix { grid-template-columns: 1fr; }
-  .footer-grid-wix { grid-template-columns: 1fr 1fr; }
-  .hero-wix-title { font-size: 2.8rem; }
+/* ==========================================================================
+   BOTÃO FLUTUANTE DE WHATSAPP (CRO HIGH-CONVERSION)
+   ========================================================================== */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+
+.floating-whatsapp:hover {
+  transform: translateY(-4px) scale(1.03);
+}
+
+.floating-whatsapp-bubble {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-main);
+  white-space: nowrap;
+}
+
+.floating-whatsapp-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.45);
+  position: relative;
+  transition: var(--transition);
+}
+
+.floating-whatsapp-btn:hover {
+  background: #20BA5A;
+  box-shadow: 0 14px 30px rgba(37, 211, 102, 0.6);
+}
+
+.online-pulse {
+  width: 10px;
+  height: 10px;
+  background-color: var(--accent-emerald);
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 8px var(--accent-emerald);
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+@keyframes pulse-glow {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.8; }
 }
 
 @media (max-width: 600px) {
-  .footer-grid-wix { grid-template-columns: 1fr; }
-  .stats-grid-wix { grid-template-columns: 1fr; }
-  .hero-wix-title { font-size: 2.2rem; }
+  .floating-whatsapp-bubble { display: none; }
+  .floating-whatsapp { bottom: 20px; right: 20px; }
+  .floating-whatsapp-btn { width: 50px; height: 50px; }
 }
