@@ -38,8 +38,8 @@ interface LeadData {
 
 interface ServiceModule {
   name: string;
-  price: number;
   days: number;
+  isRetainer: boolean;
   element: HTMLElement;
 }
 
@@ -97,7 +97,7 @@ function updateThemeIcon(btn: HTMLButtonElement | null, theme: ThemeMode): void 
 }
 
 /* ==========================================================================
-   2. Calculadora Interativa de Investimento e Prazos
+   2. Simulador Estratégico de Escopo e Prazos (Sob Consulta no Diagnóstico)
    ========================================================================== */
 function initCalculator(): void {
   const options = document.querySelectorAll<HTMLLabelElement>('.calc-option-item');
@@ -107,20 +107,24 @@ function initCalculator(): void {
   const btnWhatsappScope = document.getElementById('btn-whatsapp-scope') as HTMLAnchorElement | null;
 
   function recalculate(): void {
-    let total = 0;
     let maxDays = 0;
+    let hasRetainer = false;
+    let hasSprint = false;
     const selectedNames: string[] = [];
 
     options.forEach(opt => {
       const checkbox = opt.querySelector<HTMLInputElement>('input[type="checkbox"]');
       if (checkbox && checkbox.checked) {
         opt.classList.add('selected');
-        const price = parseFloat(opt.getAttribute('data-price') || '0');
         const days = parseInt(opt.getAttribute('data-days') || '0', 10);
         const name = opt.getAttribute('data-name') || '';
 
-        total += price;
-        if (days > maxDays) maxDays = days;
+        if (days > 0) {
+          hasSprint = true;
+          if (days > maxDays) maxDays = days;
+        } else {
+          hasRetainer = true;
+        }
         selectedNames.push(name);
       } else {
         opt.classList.remove('selected');
@@ -128,17 +132,24 @@ function initCalculator(): void {
     });
 
     if (totalValElement) {
-      totalValElement.textContent = total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      totalValElement.textContent = selectedNames.length > 0
+        ? 'Sob Consulta no Diagnóstico'
+        : 'Selecione os módulos';
+    }
+
+    let deadlineText = '';
+    if (selectedNames.length === 0) {
+      deadlineText = 'Selecione ao menos um módulo';
+    } else if (hasSprint && hasRetainer) {
+      deadlineText = `${maxDays} a ${maxDays + 5} dias úteis + Retainer Mensal`;
+    } else if (hasSprint) {
+      deadlineText = `${maxDays} a ${maxDays + 5} dias úteis`;
+    } else {
+      deadlineText = 'Mensal contínuo (Retainer)';
     }
 
     if (deadlineElement) {
-      if (selectedNames.length === 0) {
-        deadlineElement.textContent = 'Selecione ao menos um módulo';
-      } else if (maxDays > 0) {
-        deadlineElement.textContent = `${maxDays} a ${maxDays + 5} dias úteis`;
-      } else {
-        deadlineElement.textContent = 'Mensal contínuo (Retainer)';
-      }
+      deadlineElement.textContent = deadlineText;
     }
 
     if (selectedCountElement) {
@@ -149,7 +160,7 @@ function initCalculator(): void {
       if (selectedNames.length === 0) {
         btnWhatsappScope.href = "https://wa.me/5581996680373?text=Ol%C3%A1%20Alex%2C%20gostaria%20de%20um%20diagn%C3%B3stico%20com%20a%20Sousza%20Consultoria%20Inteligente%20para%20minha%20empresa.";
       } else {
-        const message = `Olá Alex, simulei um escopo no site da *Sousza Consultoria Inteligente*:\n\n*Módulos Selecionados:*\n- ${selectedNames.join('\n- ')}\n\n*Investimento Estimado:* ${total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}\n*Prazo Estimado:* ${maxDays > 0 ? maxDays + ' dias úteis' : 'Mensal contínuo'}\n\nGostaria de agendar o diagnóstico de 48h para alinharmos esse projeto.`;
+        const message = `Olá Alex, montei uma simulação de escopo no site da *Sousza Consultoria Inteligente*:\n\n*Módulos Selecionados:*\n- ${selectedNames.join('\n- ')}\n\n*Prazo Estimado de Implantação:* ${deadlineText}\n*Investimento:* A alinhar no Diagnóstico Executivo de 48h (Orçamento sob Medida).\n\nGostaria de agendar o diagnóstico gratuito para alinharmos esse projeto.`;
         btnWhatsappScope.href = `https://wa.me/5581996680373?text=${encodeURIComponent(message)}`;
       }
     }
