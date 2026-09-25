@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/assets/(.*)", "destination": "/05_site_institucional/assets/$1" },
+    { "source": "/styles.css", "destination": "/05_site_institucional/styles.css" },
+    { "source": "/app.js", "destination": "/05_site_institucional/app.js" },
+    { "source": "/(.*)", "destination": "/05_site_institucional/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" }
+      ]
+    }
+  ]
+}
