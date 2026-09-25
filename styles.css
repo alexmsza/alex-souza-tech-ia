@@ -293,6 +293,20 @@ h1, h2, h3, h4, .brand-logo {
   padding: 160px 0 90px;
   position: relative;
   text-align: center;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at 1.5px 1.5px, rgba(245, 158, 11, 0.05) 1.5px, transparent 0);
+  background-size: 32px 32px;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .hero-pill {
